@@ -1,0 +1,17 @@
+body {
+    font-size: 15pt;
+} 
+
+.color-example {color: blue; background-color: #fa5; border-style: solid; border-color: black; border-width: thick;
+}
+
+.header-example {font-size: 30pt; font-family: Consolas; ;color: #A20D0D;}
+
+.list-example{list-style-type: square; color: green;
+}
+
+.text-example {font-family: courier; font-size: 20pt; text-transform: capitalize; text-decoration: underline;
+}
+
+.div-example{background-color: yellow; border-style: dotted; border-width: medium; border-color: purple;
+}
