@@ -1,6 +1,6 @@
 body {
     background-color: lightcyan;
-    width: 100%;
+    width: auto;
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 #construction {
     text-align: center;
     color: red;
-    width: 100%;
+    width: auto;
 }
 
 /* edits in alphabet edit the second.html */
@@ -24,7 +24,7 @@ h1 {
 
 h1 {
     border-bottom: 20px groove;
-    width: 100%;
+    width: auto;
     color: darkred;
     padding: 20px;
     border-radius: 20px;
@@ -34,7 +34,7 @@ h1 {
 
 h2 {
     border-bottom: 2px dashed;
-    width: 100%;
+    width: auto;
     color: darkred;
     padding: 15px;
     margin: 40px 20px 40px 40px;
@@ -46,7 +46,7 @@ p {
     border-radius: 100px;
     padding: 50px;
     margin: 40px 40px 40px 40px;
-    width: 100%;
+    width: auto;
     font-size: 18pt;
 }
 
@@ -55,7 +55,7 @@ footer {
     border-bottom: none;
     border-radius: 20px;
     padding: 10px;
-    width: 100%;
+    width: auto;
     margin: 40px 40px 40px 40px;
     font-size: 16pt;
 }
@@ -77,7 +77,7 @@ ul {
 /*book image link in index.html*/
 #books {
     margin: 40px 20px 10px 40px;
-    width: 100%;
+    width: auto;
     height: auto;
 
 }
@@ -128,7 +128,7 @@ ul {
 
 /* Kurdish flag in second.html*/
 #flag {
-    width: 100%;
+    width: auto;
     height: auto;
     margin-left: 350px;
     margin-top: 25px;
