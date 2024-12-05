@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>SwS</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon16.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #399375;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #399375;
+    font-size: 50px;
+  }
+  .logo {
+    color: #399375;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #399375;
+  }
+  .carousel-indicators li {
+    border-color: #399375;
+  }
+  .carousel-indicators li.active {
+    background-color: #399375;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #399375; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #399375;
+    background-color: #fff !important;
+    color: #399375;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #399375 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #399375;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #a9dbef;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: black !important;
+    font-weight: bold; 
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #399375 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #399375;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+
+#demo {
+  color: black;
+  font-weight:bold;
+  background-color: #DAA520;
+}
+
+#SwS_software {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+#float-left {
+  display: block;
+  float: left;
+  padding-left: 20px;
+}
+
+#SDGs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+}
+
+#offer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+}
+
+#swsad {
+  margin: 40px 40px 40px 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.social_media {
+  width: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#responsive-box {
+      width: 360px; /* Set width to 70% of the parent or viewport */
+      background-color: lightblue;
+      padding: 20px; 
+      box-sizing: border-box; 
+      border: 1px solid #333; 
+      margin-right: auto;
+      margin-left: 20px;
+
+    }
+
+#port {
+      width: 400px;
+      height: 300px;
+      padding-top: 20px;
+    }
+
+</style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav id="nav_box" class="navbar navbar-default navbar-fixed-top">
+  
+  <div id="float-left">
+    <img src="assets/images/SwS_logo.png" alt="SwS logo" style="width:100px">
+    <p style="color: black; margin-left: 10px;" ><strong>Fostering sustainable welfare</strong></p>
+  </div><br>
+ 
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT SWS</a></li>
+        <li><a href="#services">PRODUCTS</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-left">
+  <h1 style="margin-left: 20px; color: black;">SwS ERP Software</h1> 
+  <h2 style="margin-left: 20px;">Pioneering the Future of Social Welfare Sector</h2>
+  <form>
+    
+    <div id="responsive-box" class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn" id="demo">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>What is SwS?</h2><br>
+        <h4>Sustainable Welfare System (SwS) is an enterprise resource planning system or software
+            that supports social welfare organizations to manage their operations, streamline workflow,
+            improve workplace wellbeing, and bring value to end users. The ERP system enables
+            organizations to efficiently run their operations, for example, case work management,
+            organization’s financials, marketing, and other everyday activities of the organizations.</h4><br>
+              <p> The product SwS is for any social welfare organization, whether these include foster care
+                  group homes, child protection services, senior care, special needs, family work, integration
+                  services, services for homeless, and more. The ERP system is customizable to the needs
+                  of the public, private, and third sector organizations. SwS team ensures training in the use
+                  of software to maximize its benefits to the individual needs of organizations.</p>
+  
+    </div>
+    <div class="col-sm-4">
+      <span>      
+        <img src="assets/images/SwS_software.png" alt="SwS software interface" width="360px" height="auto">
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> The mission of SwS is to empower social welfare organizations with an enterprise resource planning software and system that enhances workplace wellbeing, boosts job satisfaction, and improves service delivery to create greater value for their communities.</h4><br>
+              <p><strong>VISION:</strong> The vision of the company is to foster workplace wellbeing as a cornerstone of sustainable development, aiming to
+              achieve measurable progress by 2030 in alignment with the United Nations Sustainable Development Goals (SDGs). By that
+              year, the company strives to improve the health and wellbeing of employees in social welfare organizations (SDG 3),
+              enhance job satisfaction and retention (SDG 8), promote innovation and digital transformation in social welfare systems
+              (SDG 9), and ensure organizations are better equipped to meet the needs of their communities (SDG 11). Additionally, SwS
+              seeks to strengthen justice, transparency, and accountability in social welfare operations (SDG 16) while fostering
+              partnerships to achieve these goals (SDG 17). Through its solutions, the company aims to create thriving work
+              environments that benefit employees and contribute to a more equitable, sustainable, and impactful world.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Products Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>PRODUCT Features</h2>
+  <h4>What we offer</h4>
+  
+  <div class="container-fluid text-center">
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <span><img src="assets/images/AI_support.png" alt="AI" width="260px" height="200px"> </span>
+        <h4>AI-supported solutions</h4>
+        <p>SwS features an AI assistant that enhances work efficiency and improves the quality of care services delivery.</p>
+      </div>
+
+      <div class="col-sm-4">
+        <span><img src="assets/images/security.png" alt="security" width="220px" height="200px"> </span>
+        <h4>Strong security</h4>
+        <p>SwS offers cutting-edge security solutions, utilizing encryption protocols and secure communication channels for data integrity and user privacy.</p>
+      </div>
+
+      <div class="col-sm-4">
+        <span><img src="assets/images/erp_system.png" alt="ERP" width="260px" height="200px"> </span>
+        <h4>Adaptive ERP system</h4>
+        <p>SwS provides a comprehensive ERP system that centralizes operations, enhancing efficiency and streamlining work processes seamlessly.</p>
+      </div>
+    </div>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <span><img src="assets/images/support.png" alt="customer support" width="260px" height="200px"> </span>
+        <h4>24/7 customer support</h4>
+        <p>With access to customer support 24/7, help is always available.</p>
+      </div>
+
+      <div class="col-sm-4">
+        <span><img src="assets/images/library.png" alt="library and resources" width="200px" height="200px"> </span>
+        <h4>Versatile resource library</h4>
+        <p>With access to a versatile library of resources and peer-to-peer communication channels supporting exchange of knowledge, resources and good practices, delivering quality services is easier than ever.</p>
+      </div>
+
+      <div class="col-sm-4">
+        <span><img src="assets/images/communication.png" alt="communication" width="260px" height="200px"> </span>
+        <h4>Safe and productive communication</h4>
+        <p>SwS ensures secure communication with team members and customers, enabling productive collaboration while safeguarding sensitive information and confidentiality.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center">
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>ACTIVATE AND EMPOWER</h4>
+      <p> SwS activates efficiency, streamlines operations, and empowers social welfare organizations to drive impactful change
+          and achieve their goals.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>IMPROVED WORKPLACE WELLBEING</h4>
+      <p>SwS enhances workplace wellbeing by streamlining tasks, reducing stress, and fostering efficient
+communication. Its features, like automated workflows and real-time data, create a supportive and organized work
+environment that boosts job satisfaction.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>All-IN-ONE-PLACE PLATFORM</h4>
+      <p> SwS combines case management, budgeting, finances, administration, services, and communication into one platform,
+          streamlining operations and enhancing efficiency for seamless collaboration.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN AND SDGs</h4>
+      <p>SwS aligns with UN SDGs to improve employee well-being, foster innovation, enhance job satisfaction, strengthen justice, and build sustainable communities.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>AWARDS</h4>
+      <p> An award-winning software, SwS was recognized as the best ERP software at the Global Social Welfare Tech Awards, winning
+          in the category of Digital Transformation in Social Welfare.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">CUSTOMIZABLE</h4>
+      <p> SwS is customizable to fit the unique needs of any social welfare organization, whether private, public, or third
+          sector, adapting to different workflows and service requirements for optimal performance.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey" class="row slideanim">
+  <h2>Portfolio</h2><br>
+  <h4>Our international impact in improving social services</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img id="port" src="assets/images/Helsinki.jpg" alt="Helsinki" width="400" height="300">
+        <p><strong>Finland</strong></p>
+        <p>Yes, we developed Helsinki's child welfare system</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img id="port" src="assets/images/Stockholm.jpg" alt="Stockholm" width="400" height="300">
+        <p><strong>Sweden</strong></p>
+        <p>We also improved Stockholm's elderly care system</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img id="port" src="assets/images/Oslo.jpg" alt="Oslo" width="400" height="300">
+        <p><strong>Norway</strong></p>
+        <p>Yes, Oslo's basic care system too and more to come</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>Testimonials</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4 style="width: 60%; text-align: center; display: block; margin-left: auto; margin-right: auto;">“SwS is doing a great job in our
+        workplace! The digital platform looks
+        awesome, and it's easy for our staff to
+        use. We have seen staff retention rates
+        improve through job satisfaction and
+        increased wellbeing."<br><br><span>Samira Hadid, CEO, City of Helsinki</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="width: 60%; text-align: center; display: block; margin-left: auto; margin-right: auto;">"Just WOW!! SwS has completely transformed my work in child protection services for the better."<br><br><span>Olivia-Petra Wilson, Social worker, Lyyra Oy</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="width: 60%; text-align: center; display: block; margin-left: auto; margin-right: auto;">"SwS has helped me to be a better
+        counsellor. Documentation has never
+        been easier and the AI-assisted
+        analysis provided through the data of a
+        client has been groundbreaking in
+        making informed assessments of a
+        client’s situation"<br><br><span>Howard Koivumäki, Counsellor, Western Uusimaa Wellbeing Services County</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>under 500</strong> users</p>
+          <p><strong>2</strong> software features</p>
+          <p><strong>Online</strong> support team</p>
+          <p><strong>2</strong> on-premises support</p>
+          <p><strong>Additions</strong> available at extra cost</p>
+        </div>
+        <div class="panel-footer">
+          <h3>€29</h3>
+          <h4>per month</h4>
+          <h6>Terms and Conditions</h6>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>500+</strong> users</p>
+          <p><strong>4</strong> software features</p>
+          <p><strong>Online</strong> support team</p>
+          <p><strong>10</strong> on-premises support</p>
+          <p><strong>Additions</strong> available at extra cost</p>
+        </div>
+        <div class="panel-footer">
+          <h3>€49</h3>
+          <h4>per month</h4>
+          <h6>Terms and Conditions</h6>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1000+</strong> users</p>
+          <p><strong>All</strong> software features</p>
+          <p><strong>Exclusive</strong> online support team</p>
+          <p><strong>Unlimited</strong> on-premises support</p>
+          <p><strong>Exclusive</strong> benefits</p>
+        </div>
+        <div class="panel-footer">
+          <h3>€89</h3>
+          <h4>per month</h4>
+          <h6>Terms and Conditions</h6>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> &nbsp;&nbsp;Helsinki, Finland</p>
+      <p><span class="glyphicon glyphicon-phone"></span> &nbsp;&nbsp;+358 777888777</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> &nbsp;&nbsp;sws@sws.com</p>
+      <a href="https://www.linkedin.com" target="_blank"><img class="social_media" src="assets/images/linkedin.svg" alt="linkedin"></a>
+      <a href="https://www.whatsapp.com/" target="_blank"><img class="social_media" src="assets/images/whatsapp.svg" alt="whatsapp"></a>
+      <a href="https://www.facebook.com" target="_blank"><img class="social_media" src="assets/images/facebook.svg" alt="facebook"></a>
+      <a href="https://www.instagram.com" target="_blank"><img class="social_media" src="assets/images/instagram.svg" alt="instagram"></a>
+      <a href="https://www.youtube.com" target="_blank"><img class="social_media" src="assets/images/youtube.svg" alt="youtube"></a>
+      <a href="https://x.com/?lang=en" target="_blank"><img class="social_media" src="assets/images/x.svg" alt="x"></a>
+      <a href="https://telegram.org/" target="_blank"><img class="social_media" src="assets/images/telegram.svg" alt="telegram"></a>
+    </div>
+
+    <a href="" target="_blank">
+
+
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>©&nbsp;Made By Lawin Khalil using Bootstrap company template in<a href="https://www.w3schools.com" title="Visit w3schools">&nbsp;www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</body>
+</html>
