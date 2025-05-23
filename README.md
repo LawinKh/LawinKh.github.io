@@ -1,1 +1,3 @@
-This repository contains the websites made during my Bachelor's degree programme in Business Information Technology studies in 2024.
+This repository contains the websites I created during my Bachelor's degree studies in Business Information Technology in 2024.
+
+
