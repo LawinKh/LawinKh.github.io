@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image</title>
+</head>
+<body>
+    <img id="randomImage" alt="Random Image" width="400" height="300"> <!--HTML image tag with an id to use in JS script-->
+    
+    <script>
+        const imageUrls = [ // This creates an array that holds many image URLs in one variable
+            // First image URL stored at index 0, 2nd image at index 1, 3rd at index 2 and onwards until index 4 (5 images in total)
+            "https://images.unsplash.com/photo-1588379674354-8c9c0ee60e10?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1581008067734-4540aa9b7d60?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "https://images.unsplash.com/photo-1615852290963-4843eebb524a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "https://images.unsplash.com/photo-1570641963303-92ce4845ed4c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",  
+        ];
+        
+        const randomImage = Math.floor(Math.random() * imageUrls.length); // This picks a random number between 0 and 4 (index values) to select an image
+        
+        const imgElement = document.getElementById("randomImage"); // This finds the img tag in the HTML using its ID
+        imgElement.src = imageUrls[randomImage]; // This sets the image source to whichever URL was randomly selected
+        
+        console.log("Random index:", randomImage); // This shows which index number was picked in the browser console
+        console.log("Selected image:", imageUrls[randomImage]); // This shows which image URL was chosen in the console
+    </script>
+</body>
+</html>
