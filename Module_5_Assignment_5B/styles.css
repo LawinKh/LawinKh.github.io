@@ -1,0 +1,73 @@
+/*The 6 css selectors are form the main structure using general or class tags*/
+
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Noto sans";
+    line-height: 1.75;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+}
+
+.header {
+    text-align: center;
+    background-color: lightcoral;
+    padding: 20px;
+    align-items: stretch;
+    margin: 10px;
+    font-size: 32px;
+}
+
+.nav {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.section {
+    flex: 3;
+    background-color: yellow;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: lightgreen;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.footer {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+h2 {
+font-size: 24px;
+}
+/*The css selectors below adress specific elements using ID tags*/
+
+#second {
+    margin-right: 20pt;
+}
+
+#third {
+    margin-right: 20pt;
+}
+
+#index {
+    margin-right: 20pt;
+}

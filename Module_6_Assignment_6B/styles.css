@@ -1,0 +1,136 @@
+/*The 6 css selectors are form the main structure using general or class tags*/
+
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Noto sans";
+    line-height: 1.75;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+}
+
+.header {
+    text-align: center;
+    background-color: lightcoral;
+    padding: 20px;
+    align-items: stretch;
+    margin: 10px;
+    font-size: 28px;
+}
+
+.nav {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px
+}
+
+.section {
+    flex: 3;
+    background-color: yellow;
+    text-align: left;
+    padding: 40px;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: lightgreen;
+    text-align: left;
+    padding: 40px;
+}
+
+.footer {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/*The css selectors below adress specific elements using ID tags*/
+
+#second {
+    margin-right: 20pt;
+}
+
+#third {
+    margin-right: 20pt;
+}
+
+#index {
+    margin-right: 20pt;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:focus {
+    color: black
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.vertical_nav {
+    float: left;
+    width: 280px;
+    height: 620px;
+    background-color: whitesmoke;
+    padding: 10px;
+    font-size: 20px
+}
+
+a.active {
+    color: green;
+}
+
+.nature {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: stretch;
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+img:hover {
+    opacity: 0.1;
+}
+
+.banner {
+    width: 100%;
+}
+
+.flag {
+    width: 100%;
+    height: 700px;
+}
+
+.flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(200%);
+}
