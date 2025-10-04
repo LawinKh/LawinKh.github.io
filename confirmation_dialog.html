@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Dialog</title>
+</head>
+<body>
+    <script>
+        /* 
+        Using confirm(): Clicking the "OK" button results in "true" in console or "Yes, I am a student." response on webpage. 
+        Cancel button returns "false" in console and writes "No, I am not a student." on webpage. */
+
+        let response = confirm("Are you a student?"); // This is a declaration with variable (response) and confirm function displaying a modal asking if someone is a student.
+        if(response === true){  // If OK button is clicked, it gives a true response i.e. is a student.
+            console.log("True"); // Writes "True" on console.
+            document.body.innerHTML = "Yes, I am a student."; // Writes "Yes, I am a student." on webpage.
+        } else {  // Clicking the cancel button returns a "False" response in console and writes "No, I am not a student." on webpage.
+            console.log("False"); // Writes "False" in console.
+            document.body.innerHTML = "No, I am not a student."; // Writes "No, I am not a student." on webpage.
+        }
+    </script>
+</body>
+</html>
